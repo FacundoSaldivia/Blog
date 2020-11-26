@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FacundoSaldivia/Blog-Personal.git"
+    "url": "git+https://github.com/FacundoSaldivia/Blog.git"
   },
   "author": "Facundo Saldivia",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FacundoSaldivia/Blog-Personal/issues"
+    "url": "https://github.com/FacundoSaldivia/Blog/issues"
   },
-  "homepage": "https://github.com/FacundoSaldivia/Blog-Personal#readme",
+  "homepage": "https://github.com/FacundoSaldivia/Blog#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
