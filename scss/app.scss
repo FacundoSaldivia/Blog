@@ -1,0 +1,164 @@
+@import 'variable';
+@import 'mixin';
+
+
+html {
+    @include box-sizing(border-box);
+}
+
+*,
+*:after,
+*:before {
+    @include box-sizing(inherit)
+}
+body {
+    font-family:$fuente_princial;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;  
+}
+
+.header {
+    flex: 1;
+    padding: 10px 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px; 
+    background-color: $black;
+    a{  
+        text-decoration: none;
+        color:$white;
+    }
+
+    a:hover{
+        color:$hover-nav-color;
+    }
+    .right-tokens{
+        overflow: auto;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 15px 0;
+    }
+    li {
+        display: inline;
+        margin: 20px;
+        
+    }
+    img{
+        width: 50px;
+        float: right;
+        filter: brightness(0) invert(1);
+        padding-top:-100px;
+    }
+
+}
+
+.contenedor{
+    width: 100vw;
+    position: relative;
+    margin-left: -50.42vw;
+    left: 50%;
+
+}
+
+.background-image {
+    min-height: 40rem;
+    background-size:100%;
+    color: $grey;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0%;
+    .img-contenido{
+        text-align: center;
+        margin:auto;
+    }
+    @include background-imagen('../img/fondo.jpg');
+
+}
+.about-me{
+    background-color:$grey;
+}
+.description {
+    padding: 3% 35%;
+    text-align: center;
+    margin: auto;  
+    .p {
+    text-indent:1em;  
+    text-align:justify;
+    }
+}
+
+.img-me {   
+    img{
+        @include imagen-redonda('../img/me.jpg');
+        display:block;
+        margin:auto;
+
+    }
+    
+}
+.technologies{
+    background-color: $white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 1% 22%;
+    justify-content: space-between;
+
+    .TD img{
+        width: 50%;
+        display:block;
+        margin:auto;
+    }
+
+}
+.TD  h4{
+    text-align: justify;
+    text-align: center;
+    
+}
+.TD p{
+    text-align:center;
+    padding: 2% 15%;
+}
+.services{
+    padding: 0% 10% 2%;
+    
+}
+.services-container{
+    @include rounded-box($box-color);
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top:10%;
+    .dev{
+        .TD{
+            padding: 0% 20%;
+        }
+        .dev-icon{
+            width: 20%;
+            display: block;
+            margin: auto;
+
+        }
+    }
+}
+#footer{
+
+    padding:20px 0;
+    text-align: justify;
+    text-align: center;
+    a{
+        color:black;
+        text-decoration: none;
+
+    }
+    a:hover{
+        color:$hover-color;
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "tp-final",
+  "version": "1.0.0",
+  "description": "Blog personal",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FacundoSaldivia/Blog-Personal.git"
+  },
+  "author": "Facundo Saldivia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FacundoSaldivia/Blog-Personal/issues"
+  },
+  "homepage": "https://github.com/FacundoSaldivia/Blog-Personal#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0"
+  }
+}

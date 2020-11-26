@@ -1,0 +1,169 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.header {
+  flex: 1;
+  padding: 10px 30px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #000000;
+}
+
+.header a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header a:hover {
+  color: #c8c7eb;
+}
+
+.header .right-tokens {
+  overflow: auto;
+}
+
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.header li {
+  display: inline;
+  margin: 20px;
+}
+
+.header img {
+  width: 50px;
+  float: right;
+  filter: brightness(0) invert(1);
+  padding-top: -100px;
+}
+
+.contenedor {
+  width: 100vw;
+  position: relative;
+  margin-left: -50.42vw;
+  left: 50%;
+}
+
+.background-image {
+  min-height: 40rem;
+  background-size: 100%;
+  color: #eeeeee;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0%;
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.background-image .img-contenido {
+  text-align: center;
+  margin: auto;
+}
+
+.about-me {
+  background-color: #eeeeee;
+}
+
+.description {
+  padding: 3% 35%;
+  text-align: center;
+  margin: auto;
+}
+
+.description .p {
+  text-indent: 1em;
+  text-align: justify;
+}
+
+.img-me img {
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+  display: block;
+  margin: auto;
+}
+
+.technologies {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 1% 22%;
+  justify-content: space-between;
+}
+
+.technologies .TD img {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+.TD h4 {
+  text-align: justify;
+  text-align: center;
+}
+
+.TD p {
+  text-align: center;
+  padding: 2% 15%;
+}
+
+.services {
+  padding: 0% 10% 2%;
+}
+
+.services-container {
+  padding: 20% 2%;
+  background-color: #c8c7eb;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 10%;
+}
+
+.services-container .dev .TD {
+  padding: 0% 20%;
+}
+
+.services-container .dev .dev-icon {
+  width: 20%;
+  display: block;
+  margin: auto;
+}
+
+#footer {
+  padding: 20px 0;
+  text-align: justify;
+  text-align: center;
+}
+
+#footer a {
+  color: black;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #1d345b;
+}
